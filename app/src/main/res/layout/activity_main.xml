@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="124dp"
+        android:layout_height="141dp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-3dp"
+        android:src="@drawable/albumart"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="3dp" />
+
+    <Button
+        android:id="@+id/btn-play"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:background="@drawable/play"
+
+
+        />
+
+    <Button
+        android:id="@+id/btn-pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="111dp"
+        android:layout_marginStart="66dp"
+        android:background="@drawable/pause" />
+
+    <Button
+        android:id="@+id/btn-stop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn-pause"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/stop" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        app:srcCompat="@drawable/bg"
+
+        />
+
+</RelativeLayout>
